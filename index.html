@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | PT Abadi Jaya</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">AJ</div>
+            <div>
+                <h2>Abadi Jaya</h2>
+                <small>Employee Management</small>
+            </div>
+        </div>
+
+        <p class="menu-label">MENU UTAMA</p>
+
+        <nav class="navigation">
+            <a href="index.html" class="nav-link active">▦ Dashboard</a>
+            <a href="pegawai.html" class="nav-link">♙ Data Pegawai</a>
+            <a href="tambah-pegawai.html" class="nav-link">＋ Tambah Pegawai</a>
+
+            <p class="menu-label">MANAJEMEN</p>
+
+            <a href="jabatan.html" class="nav-link">▤ Jabatan</a>
+            <a href="departemen.html" class="nav-link">▣ Departemen</a>
+
+            <p class="menu-label">PENGATURAN</p>
+
+            <a href="profil.html" class="nav-link">◎ Profil</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <strong>PT Abadi Jaya</strong>
+            <small>Sistem Informasi Kepegawaian</small>
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <h2>Dashboard</h2>
+                <p>Ringkasan informasi kepegawaian</p>
+            </div>
+
+            <div class="admin">
+                <div class="avatar">AD</div>
+                <div>
+                    <strong>Administrator</strong>
+                    <small>Admin Sistem</small>
+                </div>
+            </div>
+        </header>
+
+        <section class="content">
+
+            <div class="welcome-section">
+                <div>
+                    <h1>Selamat Datang, Administrator!</h1>
+                    <p>Kelola informasi kepegawaian PT Abadi Jaya dengan mudah.</p>
+                </div>
+                <div class="welcome-icon">👋</div>
+            </div>
+
+            <!-- STATISTIK -->
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-icon blue">♙</div>
+                    <p>Total Pegawai</p>
+                    <h2>50</h2>
+                    <small>Seluruh pegawai perusahaan</small>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon green">✓</div>
+                    <p>Pegawai Aktif</p>
+                    <h2>45</h2>
+                    <small>Pegawai masih bekerja</small>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon orange">◷</div>
+                    <p>Pegawai Nonaktif</p>
+                    <h2>5</h2>
+                    <small>Pegawai tidak aktif</small>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon purple">▣</div>
+                    <p>Departemen</p>
+                    <h2>4</h2>
+                    <small>Total departemen</small>
+                </div>
+
+            </div>
+
+            <!-- TABEL PEGAWAI -->
+            <div class="card">
+
+                <div class="card-header">
+                    <div>
+                        <h3>Data Pegawai Terbaru</h3>
+                        <p>Daftar beberapa pegawai PT Abadi Jaya</p>
+                    </div>
+
+                    <a href="pegawai.html" class="btn btn-primary">
+                        Lihat Semua →
+                    </a>
+                </div>
+
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>NIP</th>
+                                <th>Nama Pegawai</th>
+                                <th>Jabatan</th>
+                                <th>Departemen</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="dashboardEmployeeBody">
+    <!-- Data akan diisi otomatis oleh JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <footer>
+                © 2026 PT Abadi Jaya. Sistem Informasi Kepegawaian.
+            </footer>
+
+        </section>
+    </main>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Pegawai | PT Abadi Jaya</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">AJ</div>
+            <div>
+                <h2>Abadi Jaya</h2>
+                <small>Employee Management</small>
+            </div>
+        </div>
+
+        <p class="menu-label">MENU UTAMA</p>
+        <nav class="navigation">
+            <a href="index.html" class="nav-link">▦ Dashboard</a>
+            <a href="pegawai.html" class="nav-link">♙ Data Pegawai</a>
+            <a href="tambah-pegawai.html" class="nav-link active">＋ Tambah Pegawai</a>
+
+            <p class="menu-label">MANAJEMEN</p>
+            <a href="jabatan.html" class="nav-link">▤ Jabatan</a>
+            <a href="departemen.html" class="nav-link">▣ Departemen</a>
+
+            <p class="menu-label">PENGATURAN</p>
+            <a href="profil.html" class="nav-link">◎ Profil</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <strong>PT Abadi Jaya</strong>
+            <small>Sistem Informasi Kepegawaian</small>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <h2>Tambah Pegawai</h2>
+                <p>Formulir penambahan data pegawai</p>
+            </div>
+
+            <div class="admin">
+                <div class="avatar">AD</div>
+                <div>
+                    <strong>Administrator</strong>
+                    <small>Admin Sistem</small>
+                </div>
+            </div>
+        </header>
+
+        <section class="content">
+
+            <div class="page-heading">
+                <div>
+                    <h1>Tambah Pegawai Baru</h1>
+                    <p>Masukkan informasi pegawai pada formulir berikut.</p>
+                </div>
+            </div>
+
+            <div class="card form-card">
+
+                <div class="card-header">
+                    <div>
+                        <h3>Informasi Pegawai</h3>
+                        <p>Lengkapi seluruh informasi yang diperlukan.</p>
+                    </div>
+                </div>
+
+                <div id="formMessage" class="form-message"></div>
+                <form id="employeeForm"></form>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="nip">Nomor Induk Pegawai (NIP)</label>
+                            <input type="text" id="nip" name="nip"
+                                placeholder="Contoh: AJ006" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" name="nama"
+                                placeholder="Masukkan nama lengkap" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="jk">Jenis Kelamin</label>
+                            <select id="jk" name="jk" required>
+                                <option value="">Pilih jenis kelamin</option>
+                                <option>Laki-laki</option>
+                                <option>Perempuan</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tanggal">Tanggal Lahir</label>
+                            <input type="date" id="tanggal" name="tanggal" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email"
+                                placeholder="nama@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telepon">Nomor Telepon</label>
+                            <input type="tel" id="telepon" name="telepon"
+                                placeholder="08xxxxxxxxxx" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="jabatan">Jabatan</label>
+                            <select id="jabatan" name="jabatan" required>
+                                <option value="">Pilih jabatan</option>
+                                <option>Manager</option>
+                                <option>Staff IT</option>
+                                <option>Administrasi</option>
+                                <option>Akuntan</option>
+                                <option>Staff HRD</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="departemen">Departemen</label>
+                            <select id="departemen" name="departemen" required>
+                                <option value="">Pilih departemen</option>
+                                <option>HRD</option>
+                                <option>Teknologi</option>
+                                <option>Administrasi</option>
+                                <option>Keuangan</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="alamat">Alamat</label>
+                            <textarea id="alamat" name="alamat"
+                                placeholder="Masukkan alamat lengkap"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="status">Status Pegawai</label>
+                            <select id="status" name="status" required>
+                                <option value="">Pilih status</option>
+                                <option>Aktif</option>
+                                <option>Nonaktif</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="reset" class="btn btn-secondary">
+                            Reset
+                        </button>
+
+                        <button type="submit" class="btn btn-primary">
+                            Simpan Data
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <footer>
+                © 2026 PT Abadi Jaya. Sistem Informasi Kepegawaian.
+            </footer>
+
+        </section>
+    </main>
+
+</div>
+
+</body>
+</html>
